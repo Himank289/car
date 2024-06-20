@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import CarForm from '../Components/CarForm';
 import carService from '../Services/CarService';
+import './EditCar.css'
 
 const EditCar = () => {
     const { id } = useParams();
@@ -25,7 +26,7 @@ const EditCar = () => {
     }
 
     return (
-        <div>
+        <div className='edit-car-container'>
             <h1>Edit Car</h1>
             <CarForm car={car} onSave={handleSave} />
         </div>

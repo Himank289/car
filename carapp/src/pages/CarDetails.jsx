@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import carService from '../Services/CarService';
+import './CarDetails.css'
 
 const CarDetails = () => {
     const { id } = useParams();
@@ -17,7 +18,7 @@ const CarDetails = () => {
     }
 
     return (
-        <div>
+        <div className='car-details-container'>
             <h1>{car.name}</h1>
             <p>Brand: {car.brand}</p>
             <p>Color: {car.color}</p>

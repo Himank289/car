@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './CarForm.css'
 
 const CarForm = ({ car, onSave }) => {
     const [formData, setFormData] = useState({
@@ -33,7 +34,7 @@ const CarForm = ({ car, onSave }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='car-form' onSubmit={handleSubmit}>
             
             <input
                 type="number"

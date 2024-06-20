@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import "./CarItem.css"
 
 const CarItem = ({ car }) => {
     console.log(car);
 
     return (
-        <div>
+        <div className='car-item'>
           
             <h2>{car.name}</h2>
             <p>{car.description}</p>
